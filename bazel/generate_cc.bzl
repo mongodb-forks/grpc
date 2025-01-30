@@ -168,7 +168,7 @@ def generate_cc_impl(ctx):
         executable = ctx.executable._protoc,
         arguments = arguments,
         use_default_shell_env = True,
-        execution_requirements = execution_requirements
+        execution_requirements = execution_requirements,
     )
 
     return DefaultInfo(files = depset(out_files))
